@@ -1,2 +1,0 @@
-class PortraitController < ApplicationController
-end

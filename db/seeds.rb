@@ -18,7 +18,7 @@ p6 = Portrait.create(img_url: "https://images.unsplash.com/photo-1512591290618-9
 p7 = Portrait.create(img_url: "https://images.unsplash.com/photo-1526970371649-4e603ab60f2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2498&q=80", description: "Ocean, Rock, Scissors!", like: "1", user_id: 1)
 p8 = Portrait.create(img_url: "ttps://images.unsplash.com/photo-1534655882117-f9eff36a1574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", description: "C3P0", like: "1", user_id: 1)
 p9 = Portrait.create(img_url: "https://images.unsplash.com/photo-1599061827636-52c804e898a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80", description: "Hello", like: "1", user_id: 1)
-p10 = Portrait.create(img_url: "https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1969&q=80", description: "Junle", like: "1", user_id: 1)
+p10 = Portrait.create(img_url: "https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1969&q=80", description: "Jungle", like: "1", user_id: 1)
 
 c1 = Comment.create(content: "Insert text here", portrait_id: 1)
 c2 = Comment.create(content: "Insert text here", portrait_id: 2)
