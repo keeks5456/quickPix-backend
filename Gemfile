@@ -18,6 +18,7 @@ gem 'puma', '~> 4.1'
 
 gem 'faker'
 gem 'rack-cors'
+gem 'fast_jsonapi'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
