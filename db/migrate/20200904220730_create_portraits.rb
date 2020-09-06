@@ -1,6 +1,6 @@
-class CreatePortrait < ActiveRecord::Migration[6.0]
+class CreatePortraits < ActiveRecord::Migration[6.0]
   def change
-    create_table :portrait do |t|
+    create_table :portraits do |t|
       t.string :img_url
       t.string :description
       t.integer :like

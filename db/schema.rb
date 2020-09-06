@@ -12,14 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2020_09_04_221010) do
 
-  create_table "comment", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.string "content"
     t.integer "portrait_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "portrait", force: :cascade do |t|
+  create_table "portraits", force: :cascade do |t|
     t.string "img_url"
     t.string "description"
     t.integer "like"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_09_04_221010) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "user", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "bio"
     t.datetime "created_at", precision: 6, null: false
