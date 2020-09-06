@@ -2,12 +2,12 @@ class PortraitsController < ApplicationController
   
   def index 
     portraits = Portrait.all
-    render json: portraits
+    render json: PortraitSerializer.new(portraits)
   end
 
   def show 
-    portrait = Portrait.find_by(params[:id])
-    render json: portrait
+    portrait = Portrait.find_by(id: params[:id])
+    render json: PortraitSerializer.new(portraits)
   end
 
   def create 
@@ -19,16 +19,6 @@ class PortraitsController < ApplicationController
     end
   end
 
-  # def update
-  #   portrait = Portrait.find(params[:id])
-
-  #   if portrait.update(portrait_params)
-  #       render json: portrait
-  #   else
-  #       render json: { error: "Please try again"}
-  #   end
-  # end
-  # we can do an update portrait once mvc is all done (we didnt add it to our user story)
 
   def destroy 
     portrait = Portrait.find(params[:id])
