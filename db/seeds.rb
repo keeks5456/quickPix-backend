@@ -20,6 +20,7 @@ p8 = Portrait.create(img_url: "https://files.slack.com/files-pri/T02MD9XTF-F01AA
 p9 = Portrait.create(img_url: "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", description: "A Clean Desk Makes Means A Happy Dev", like: "1", user_id: 1)
 p10 = Portrait.create(img_url: "https://files.slack.com/files-pri/T02MD9XTF-F019Z777754/image_from_ios.jpg", description: "Aangnisha", like: "1", user_id: 1)
 
+
 c1 = Comment.create(content: "Insert text here", portrait_id: 1)
 c2 = Comment.create(content: "Insert text here", portrait_id: 2)
 c3 = Comment.create(content: "Insert text here", portrait_id: 3)
@@ -31,4 +32,6 @@ c8 = Comment.create(content: "Insert text here", portrait_id: 8)
 c9 = Comment.create(content: "Insert text here", portrait_id: 9)
 c10 = Comment.create(content: "Insert text here", portrait_id: 10)
 
+
 puts 'seeds works'
+
