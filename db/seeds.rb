@@ -31,7 +31,7 @@ c8 = Comment.create(content: "Insert text here", portrait_id: 8)
 c9 = Comment.create(content: "Insert text here", portrait_id: 9)
 c10 = Comment.create(content: "Insert text here", portrait_id: 10)
 
-
+#attemping to get shit to show in github
 # ActiveRecord::Schema.define(version: 2020_09_04_221010) do
 
 #     create_table "comment", force: :cascade do |t|
