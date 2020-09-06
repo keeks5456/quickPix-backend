@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
 
+
 def index
     comments = Comment.all 
     render json: comments
@@ -42,3 +43,4 @@ def comment_params
     params.require(:comment).permit(:content, :portrait_id)
 end
 end
+
