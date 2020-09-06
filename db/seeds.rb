@@ -5,9 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#dont fuck this up Akiko!
+
 
 user1 = User.create(name: "Penelope", bio: "Cruz")
+
 
 p1 = Portrait.create(img_url: "https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1969&q=80", description: "The Perfect Breakfast", like: "1", user_id: 1)
 p2 = Portrait.create(img_url: "https://images.unsplash.com/photo-1599061827636-52c804e898a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80", description: "Hot Air Ballon Sailing", like: "1", user_id: 1)
@@ -21,6 +22,7 @@ p9 = Portrait.create(img_url: "https://images.unsplash.com/photo-1581481615985-b
 p10 = Portrait.create(img_url: "https://files.slack.com/files-pri/T02MD9XTF-F019Z777754/image_from_ios.jpg", description: "Aangnisha", like: "1", user_id: 1)
 
 
+
 c1 = Comment.create(content: "Very well done! What camera did you take this with?", portrait_id: 1)
 c2 = Comment.create(content: "This is beautiful! ", portrait_id: 2)
 c3 = Comment.create(content: "When beer is life", portrait_id: 3)
@@ -32,6 +34,7 @@ c8 = Comment.create(content: "Insert text here", portrait_id: 8)
 c9 = Comment.create(content: "Insert text here", portrait_id: 9)
 c10 = Comment.create(content: "Insert text here", portrait_id: 10)
 
+# needs more comments
 
 puts 'seeds works'
 

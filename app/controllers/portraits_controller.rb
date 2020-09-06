@@ -32,3 +32,4 @@ class PortraitsController < ApplicationController
     params.require(:portrait).permit(:img_url, :description, :like, :user_id)
   end
 end
+
