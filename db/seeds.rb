@@ -14,7 +14,7 @@ require 'httparty'
   parsed = JSON.parse(response.body)
   userImg = parsed.map{|img_url| img_url['urls']['regular']}
   return userImg
-  byebug
+  # byebug
   end
 
   getImages
