@@ -8,10 +8,18 @@
 require 'rubygems'
 require 'httparty'
 
-def getImages
-response = HTTParty.get('https://api.unsplash.com/photos/?client_id=49IDngP5JuN5cZsMySEvL3Qskhum7RDyuj7DtQB9q5w')
-parsed = JSON.parse(response.body)
-end
+  def getImages
+  response = HTTParty.get('https://api.unsplash.com/photos/?client_id=49IDngP5JuN5cZsMySEvL3Qskhum7RDyuj7DtQB9q5w')
+
+  parsed = JSON.parse(response.body)
+  userImg = parsed.map{|img_url| img_url['urls']['regular']}
+  return userImg
+  byebug
+  end
+
+  getImages
+
+
 
 
 user1 = User.create(name: "Penelope", bio: "Cruz")

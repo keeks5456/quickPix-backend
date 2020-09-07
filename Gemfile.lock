@@ -65,6 +65,8 @@ GEM
     erubi (1.9.0)
     faker (2.13.0)
       i18n (>= 1.6, < 2)
+    faraday (1.0.1)
+      multipart-post (>= 1.2, < 3)
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
     ffi (1.13.1)
@@ -176,6 +178,7 @@ DEPENDENCIES
   byebug
   faker
   fast_jsonapi
+  httparty
   listen (~> 3.2)
   puma (~> 4.1)
   rack-cors
