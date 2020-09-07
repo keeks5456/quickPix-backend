@@ -5,6 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'rubygems'
+require 'httparty'
+
+def getImages
+response = HTTParty.get('https://api.unsplash.com/photos/?')
+parsed = JSON.parsed(response.body)
+end
+
 
 
 user1 = User.create(name: "Penelope", bio: "Cruz")

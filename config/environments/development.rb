@@ -49,4 +49,17 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+#unsplash config
+Unsplash.configure do |config|
+  config.application_access_key = "49IDngP5JuN5cZsMySEvL3Qskhum7RDyuj7DtQB9q5w"
+  config.application_secret = "Jyy7KB4MsU1Tpy4JkXbtjtvTsruRCf9wUjHzZOpL2KA"
+  config.application_redirect_uri = "https://your-application.com/oauth/callback"
+  config.utm_source = "alices_terrific_client_app"
+
+  # optional:
+
+end
+
+
+
 end
