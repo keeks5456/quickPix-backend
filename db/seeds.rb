@@ -32,7 +32,6 @@ p9 = Portrait.create(img_url: "https://images.unsplash.com/photo-1581481615985-b
 p10 = Portrait.create(img_url: "https://files.slack.com/files-pri/T02MD9XTF-F019Z777754/image_from_ios.jpg", description: "Aangnisha", like: "1", user_id: 1)
 
 
-
 c1 = Comment.create(content: "Very well done! What camera did you take this with?", portrait_id: 1)
 c2 = Comment.create(content: "This is beautiful! ", portrait_id: 2)
 c3 = Comment.create(content: "When beer is life", portrait_id: 3)
