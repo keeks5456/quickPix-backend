@@ -13,8 +13,7 @@ response = HTTParty.get('https://api.unsplash.com/photos/?client_id=49IDngP5JuN5
 parsed = JSON.parse(response.body)
 end
 
-
-
+#attempting to get things to work
 user1 = User.create(name: "Penelope", bio: "Cruz")
 
 p1 = Portrait.create(img_url: "https://images.unsplash.com/photo-1594230655204-c0fb45f9430c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", description: "Breakfast of Champions!", like: "1", user_id: 1)
