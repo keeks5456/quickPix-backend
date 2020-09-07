@@ -15,6 +15,8 @@ end
 
 
 
+
+
 user1 = User.create(name: "Penelope", bio: "Cruz")
 
 
