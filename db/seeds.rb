@@ -23,7 +23,11 @@ User.destroy_all
 
 
   10.times do
-    User.create(name: "Penelope", bio: "Cruz")
+    User.create({
+      name: "Micheal B. Jordan", 
+      bio: "My Passion in life is to capture the beauty in people, places, and objects", 
+      image: "https://www.producedbyconference.com/los-angeles/wp-content/uploads/2019/04/michael-b-jordan.jpg"
+      })
   end
 
   getImages.map do |images|
