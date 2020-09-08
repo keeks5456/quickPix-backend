@@ -20,8 +20,6 @@ User.destroy_all
     end
     getImages
 
-
-
   10.times do
     User.create({
       name: "Micheal B. Jordan", 
@@ -31,24 +29,20 @@ User.destroy_all
   end
 
   getImages.map do |images|
-    # byebug
   Portrait.create(img_url: images[:img_url], description: images[:description], user_id: User.all.sample.id, like: rand(1..10))
-  # byebug
   end
 
 
-c1 = Comment.create(content: "Very well done! What camera did you take this with?", portrait_id: 1)
+c1 = Comment.create(content: "Very well done!", portrait_id: 1)
 c2 = Comment.create(content: "This is beautiful! ", portrait_id: 2)
-c3 = Comment.create(content: "When beer is life", portrait_id: 3)
-c4 = Comment.create(content: "This is the exact spot my husband proposed to me! Love this!", portrait_id: 4)
-c5 = Comment.create(content: "Boy, I would feel like an ant if I saw this in real life!", portrait_id: 5)
-c6 = Comment.create(content: "Ahh! Melborn! How I've missed you!", portrait_id: 6)
-c7 = Comment.create(content: "Splish Splash!", portrait_id: 7)
-c8 = Comment.create(content: "Love the minimalistic look!", portrait_id: 8)
-c9 = Comment.create(content: "Underratted character, dont @ me!", portrait_id: 9)
-c10 = Comment.create(content: "LOL! What a troll", portrait_id: 10)
-
-# needs more comments
+c3 = Comment.create(content: "What a life!", portrait_id: 3)
+c4 = Comment.create(content: "Love this!", portrait_id: 4)
+c5 = Comment.create(content: "Incredible!!", portrait_id: 5)
+c6 = Comment.create(content: "Ahh!", portrait_id: 6)
+c7 = Comment.create(content: "Wonderful!", portrait_id: 7)
+c8 = Comment.create(content: "You've got an eye for beauty!", portrait_id: 8)
+c9 = Comment.create(content: "I appreciate this!", portrait_id: 9)
+c10 = Comment.create(content: "I am speechless", portrait_id: 10)
 
 puts 'seeds works'
 
