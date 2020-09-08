@@ -20,13 +20,13 @@ User.destroy_all
     end
     getImages
 
-  10.times do
+ 
     User.create({
       name: "Micheal B. Jordan", 
       bio: "My Passion in life is to capture the beauty in people, places, and objects", 
       image: "https://www.producedbyconference.com/los-angeles/wp-content/uploads/2019/04/michael-b-jordan.jpg"
       })
-  end
+
 
   getImages.map do |images|
   Portrait.create(img_url: images[:img_url], description: images[:description], user_id: User.all.sample.id, like: rand(1..10))
