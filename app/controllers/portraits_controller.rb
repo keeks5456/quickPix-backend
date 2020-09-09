@@ -7,16 +7,23 @@ class PortraitsController < ApplicationController
 
   def show 
     portrait = Portrait.find_by(id: params[:id])
-    render json: PortraitSerializer.new(portraits)
+    render json: PortraitSerializer.new(portrait)
   end
 
   def create 
-    portrait = portrait.new(portrait_params)
-    if portrait.save 
-      render json: portrait
-    else 
-      render json: {error: "Please add the correct attributes"}
-    end
+    portrait = Portrait.create(portrait_params)
+    options = {
+      include: [:user]
+    }
+      render json: PortraitSerializer.new(portrait)
+  end
+
+  def update 
+    
+    portrait = Portrait.find(params[:id])
+    portrait.update(params.require(:portrait).permit(:like))
+    portrait.save
+    render json: portrait
   end
 
 
