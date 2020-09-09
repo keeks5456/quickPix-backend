@@ -7,7 +7,7 @@ class PortraitsController < ApplicationController
 
   def show 
     portrait = Portrait.find_by(id: params[:id])
-    render json: PortraitSerializer.new(portraits)
+    render json: PortraitSerializer.new(portrait)
   end
 
   def create 
@@ -17,6 +17,14 @@ class PortraitsController < ApplicationController
     else 
       render json: {error: "Please add the correct attributes"}
     end
+  end
+
+  def update 
+    
+    portrait = Portrait.find(params[:id])
+    portrait.update(params.require(:portrait).permit(:like))
+    portrait.save
+    render json: portrait
   end
 
 
