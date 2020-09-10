@@ -12,23 +12,19 @@ class CommentsController < ApplicationController
   end
   
   def create
-      comment = Comment.new(comment_params)
-  
-      if comment.save
-          render json: comment
-      else
-          render json: { error: "Please try again"}
-      end
+
+      comment = Comment.create(comment_params)
+      options = {
+          include: [:portrait]
+      }
+      render json: CommentSerializer.new(comment, options)
       end
   
   def update
       comment = Comment.find(params[:id])
-  
-      if comment.update(comment_params)
+      comment.update(comment_params)
+      comment.save
           render json: comment
-      else
-          render json: { error: "Please try again"}
-      end
   end
   
   def destroy
