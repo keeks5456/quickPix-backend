@@ -20,9 +20,9 @@ User.destroy_all
     end
   
     User.create({
-      name: "Micheal B. Jordan", 
+      name: "Jim Halpert", 
       bio: "My Passion in life is to capture the beauty in people, places, and objects", 
-      image: "https://www.producedbyconference.com/los-angeles/wp-content/uploads/2019/04/michael-b-jordan.jpg"
+      image: "https://akns-images.eonline.com/eol_images/Entire_Site/2019027/rs_600x600-190127175953-600.2019-sag-awards-red-carpet-fashions-john-krasinsk.jpg?fit=around|1080:1080&output-quality=90&crop=1080:1080;center,top"
       })
 
 
