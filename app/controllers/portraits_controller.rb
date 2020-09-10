@@ -27,8 +27,8 @@ class PortraitsController < ApplicationController
 
 
   def destroy 
-    portrait = Portrait.find(params[:id])
-    portrait.destroy
+    @portrait = Portrait.find(params[:id])
+    @portrait.destroy
     render json: {message: "Successfully deleted the portrait"}
   end
 
