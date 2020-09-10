@@ -19,7 +19,6 @@ class PortraitsController < ApplicationController
   end
 
   def update 
-    
     portrait = Portrait.find(params[:id])
     portrait.update(params.require(:portrait).permit(:like))
     portrait.save
